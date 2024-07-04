@@ -1,0 +1,144 @@
+.section1_text_left2{
+  font-size: var(--body);
+  font-family: var(--font-2);
+  color: var(--color-white-75);
+}
+
+.section1_button{
+  align-self: start;
+  margin-top: 20px;
+}
+
+.section2{
+  padding: 40px 0;
+  display: grid;
+  gap: 30px;
+}
+
+.section2_text3{
+  font-size: var(--sub);
+  font-family: var(--font-2);
+}
+
+.section2_logotip{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.section2_logotip img{
+  justify-self: center;
+  align-self: center;
+}
+
+.section2_button{
+  justify-self: center;
+}
+
+.section3_text1{
+  color: var(--color-dark-50);
+  font-family: var(--font-2);
+  font-size: var(--body);
+}
+
+.section3_button{
+  align-self: start;
+  margin-top: 20px;
+}
+
+.section4_text1{
+  color: var(--color-dark-50);
+  font-family: var(--font-2);
+  font-size: var(--body);
+}
+
+.section4_button{
+  align-self: start;
+  margin-top: 20px;
+}
+
+.section5{
+  display: grid;
+  gap: 30px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.section5_text1{
+  font-size: var(--sub);
+  font-family: var(--font-2);
+}
+
+.section5_avatar{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.section5_avatar1,
+.section5_avatar2,
+.section5_avatar3,
+.section5_avatar4{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  box-shadow: var(--shadow-1);
+  border-radius: 5px;
+  padding: 15px 20px;
+}
+
+.name1,
+.name2,
+.name3,
+.name4{
+  font-family: var(--font-1);
+  font-size: var(--h5);
+  font-weight: bold;
+}
+
+.position1,
+.position2,
+.position3,
+.position4{
+  font-family: var(--font-2);
+  color: var(--color-dark-75);
+  text-transform: uppercase;
+}
+
+.section5_button{
+  justify-self: center;
+}
+
+@media (max-width: 1200px){
+  .section2_logotip{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+  .section1_left,
+  .section4_left{
+    order: 1;
+  }
+
+  .section1_right,
+  .section4_right{
+    order: 0;
+  }
+
+  .section5_avatar{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .section2_logotip {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .section5_avatar {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
